@@ -8,24 +8,28 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed=5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb= GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         rb.velocity = (moveInput * moveSpeed);
+        if (rb.velocity != Vector2.zero)
+        {
+            //Move
+        }
         
     }
     public void Move(InputAction.CallbackContext context)
     {
+        Debug.Log("moving");
         animator.SetBool("isWalking", true);
         if (context.canceled)
         {
@@ -37,5 +41,7 @@ public class PlayerMovement : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
         animator.SetFloat("InputX", moveInput.x);
         animator.SetFloat("InputY", moveInput.y);
+        Debug.Log(moveInput.x);
+        Debug.Log(moveInput.y);
     }
 }

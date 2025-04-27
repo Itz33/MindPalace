@@ -2699,6 +2699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4daf624e5df384db08c97eb0e39f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2144686870}
 --- !u!95 &1312533900
 Animator:
   serializedVersion: 5
@@ -2707,7 +2708,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312533894}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 02d6161281d31724d800c3e7f639ca12, type: 2}
   m_CullingMode: 0
@@ -2735,6 +2736,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: f985153c0ffa8094b8d1d16bcbb847f0, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: f985153c0ffa8094b8d1d16bcbb847f0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1160356261127867848, guid: f985153c0ffa8094b8d1d16bcbb847f0, type: 3}
       propertyPath: m_Controller
@@ -2796,6 +2801,11 @@ PrefabInstance:
 --- !u!4 &2144686869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: f985153c0ffa8094b8d1d16bcbb847f0, type: 3}
+  m_PrefabInstance: {fileID: 1956933832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2144686870 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: f985153c0ffa8094b8d1d16bcbb847f0, type: 3}
   m_PrefabInstance: {fileID: 1956933832}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
