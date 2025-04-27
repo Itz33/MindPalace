@@ -45,21 +45,21 @@ TagManager:
   - name: Ground
     uniqueID: 420132935
     locked: 0
-  - name: Alpha
-    uniqueID: 991035673
+  - name: Collision
+    uniqueID: 1172445979
     locked: 0
   - name: WalkInFront
     uniqueID: 2295903033
     locked: 0
-  - name: Collision
-    uniqueID: 1172445979
+  - name: Decor
+    uniqueID: 404091719
+    locked: 0
+  - name: Alpha
+    uniqueID: 991035673
     locked: 0
   - name: Player
     uniqueID: 2559339493
     locked: 0
   - name: WalkBehind
     uniqueID: 3852103123
-    locked: 0
-  - name: Decor
-    uniqueID: 404091719
     locked: 0
