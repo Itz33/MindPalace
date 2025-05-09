@@ -2419,6 +2419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53133e26583b40046910966359688bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPosition: {x: -0.043832302, y: -6.332258, z: 0.006998968}
+  newplayerPosition: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
   sceneToChange: 1
 --- !u!19719996 &1603150585
 TilemapCollider2D:
@@ -2603,13 +2605,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2404533517774876645, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
     - target: {fileID: 6444905986812799538, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6444905986812799538, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.46
+      value: -6.25
       objectReference: {fileID: 0}
     - target: {fileID: 6444905986812799538, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
       propertyPath: m_LocalPosition.z
