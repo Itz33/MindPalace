@@ -8,15 +8,23 @@ public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] Sprite BaseSprite;
     [SerializeField] Sprite HoverSprite;
     [SerializeField] public Image ThisImage;
+    [SerializeField] GameObject ToolTip;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         ThisImage.sprite = HoverSprite;
+        activateTooltip();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         ThisImage.sprite = BaseSprite;
+        activateTooltip();
+    }
+
+    public void activateTooltip()
+    {
+        ToolTip.SetActive(!ToolTip.activeSelf);
     }
 
 }
