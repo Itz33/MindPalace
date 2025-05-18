@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
 
     [SerializeField] Sprite BaseSprite;
@@ -10,8 +11,10 @@ public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] public Image ThisImage;
     [SerializeField] GameObject ToolTip;
 
+
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log("Hovering");
         ThisImage.sprite = HoverSprite;
         activateTooltip();
     }
@@ -27,4 +30,8 @@ public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         ToolTip.SetActive(!ToolTip.activeSelf);
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        SceneManager.LoadScene(0);
+    }
 }
