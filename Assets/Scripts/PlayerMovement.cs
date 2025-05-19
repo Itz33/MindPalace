@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     [SerializeField] private Animator animator;
 
+    [SerializeField] private AudioSource footStep;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -36,11 +37,15 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
+        footStep.Play();
+
         Debug.Log("moving");
         animator.SetBool("isWalking", true);
         moveInput = context.ReadValue<Vector2>();
         if (context.canceled)
         {
+            footStep.Stop();
+
             animator.SetBool("isWalking", false);
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);

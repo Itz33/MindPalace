@@ -8,7 +8,8 @@ public class SoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        audioToSound.Play();
+        if(!OpenSecretDoor.cuchilloFound) audioToSound.Play();
+
     }
 
 }

@@ -13,6 +13,7 @@ public class ChangeScene : MonoBehaviour
     
     [Header("Newspaper Check")]
     [SerializeField] private bool requiresNewspaper = false;
+    [SerializeField] private bool requiresCuchillo = false;
     [SerializeField] private float messageDisplayTime = 2f;
     [SerializeField] private GameObject messageUI; // Optional: Assign a UI panel in Inspector
 
@@ -22,10 +23,15 @@ public class ChangeScene : MonoBehaviour
         {
             if (requiresNewspaper && !NewspaperItem.NewspaperPickedUp)
             {
-                ShowMessage("You need to read the newspaper first!");
+                ShowMessage("Debes leer el periódico antes");
                 return;
             }
-            
+            if (requiresCuchillo && !OpenSecretDoor.cuchilloFound)
+            {
+                ShowMessage("Debes encontrar una pista antes");
+                return;
+            }
+
             newplayerPosition.position = startPosition;
             SceneManager.LoadScene((int)sceneToChange);
         }
@@ -38,10 +44,10 @@ public class ChangeScene : MonoBehaviour
         // If you have UI for messages
         if (messageUI != null)
         {
-            if (messageUI.TryGetComponent<TextMeshProUGUI>(out var textComponent))
-            {
-                textComponent.text = message;
-            }
+
+
+            messageUI.GetComponentInChildren<TextMeshProUGUI>().text = message;
+            
             messageUI.SetActive(true);
             Invoke("HideMessage", messageDisplayTime);
         }
