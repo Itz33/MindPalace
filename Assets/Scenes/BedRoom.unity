@@ -1321,6 +1321,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70450feaa27d404086e97aca8617ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectableImage: {fileID: 4803954841827943968, guid: 0933430e46616e24f890aef6b8e151c0, type: 3}
+  newsPaperInformation: "Una mujer de la localidad fue encontrada asesinada el s\xE1bado
+    por la noche en circunstancias misteriosas. Las autoridades instan a cualquier
+    persona con informaci\xF3n a que se presente. Se ofrece una recompensa sustancial
+    de $$$ por pistas que conduzcan al arresto de la sospechosa. Por favor, contacte
+    con el Departamento de Polic\xEDa inmediatamente si tiene alg\xFAn detalle relevante."
+  entry:
+    id: 
+    image: {fileID: 0}
+    text: 
+    collected: 0
   interactionDistance: 2
   newspaperText: {fileID: 220565639}
   newspaperImage: {fileID: 567669719}
@@ -3237,7 +3248,7 @@ Transform:
   m_GameObject: {fileID: 855691751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.27, y: -3.24, z: 0.0077562733}
+  m_LocalPosition: {x: -0.75, y: 3.43, z: 0.0077562733}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4601,10 +4612,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f9010b1c5142949b5cc2dd430f1bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedItem: []
-  collectedItemIDs: []
+  newspapers: []
   inventoryPanel: {fileID: 0}
-  inventoryUIprefab: {fileID: 0}
+  newspaperUIprefab: {fileID: 0}
+  informationPanel: {fileID: 0}
+  imagePanel: {fileID: 0}
 --- !u!4 &1368628943
 Transform:
   m_ObjectHideFlags: 0
@@ -5084,6 +5096,9 @@ MonoBehaviour:
   startPosition: {x: -14.04, y: -0.95, z: 0.006998968}
   newplayerPosition: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
   sceneToChange: 6
+  requiresNewspaper: 0
+  messageDisplayTime: 2
+  messageUI: {fileID: 0}
 --- !u!1 &1820159335
 GameObject:
   m_ObjectHideFlags: 0

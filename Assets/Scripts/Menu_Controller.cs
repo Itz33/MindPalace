@@ -15,9 +15,20 @@ public class Menu_Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bool activate;
         menuCanvas.SetActive(false);
-        newspaperImageUI.gameObject.SetActive(false);
-        newspaperInformationUI.gameObject.SetActive(false);
+        if (InventorySystem.instance.newspapers.Count == 0)
+        {
+            activate = false;
+        }
+        else
+        {
+            activate = InventorySystem.instance.newspapers[0].collected;
+        }
+
+
+            newspaperImageUI.gameObject.SetActive(activate);
+        newspaperInformationUI.gameObject.SetActive(activate);
     }
 
     // Update is called once per frame
@@ -33,8 +44,8 @@ public class Menu_Controller : MonoBehaviour
             }
             else
             {
-                newspaperImageUI.gameObject.SetActive(false);
-                newspaperInformationUI.gameObject.SetActive(false);
+                //newspaperImageUI.gameObject.SetActive(false);
+                //newspaperInformationUI.gameObject.SetActive(false);
             }
         }
     }
