@@ -32,9 +32,10 @@ public class ChangeScene : MonoBehaviour
                 return;
             }
 
-            newplayerPosition.position = startPosition;
-            SceneManager.LoadScene((int)sceneToChange);
+
         }
+        newplayerPosition.position = startPosition;
+        SceneManager.LoadScene((int)sceneToChange);
     }
 
     private void ShowMessage(string message)
