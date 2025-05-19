@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c58c6eb2-1d99-483e-8ed4-383351edaed3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MindPalace-main/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MindPalace-main/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BedRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BedRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Corridor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Corridor.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kitchen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kitchen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainHall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainHall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewspaperItem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <updated>1747559720783</updated>
       <workItem from="1747559722304" duration="654000" />
       <workItem from="1747560400544" duration="6057000" />
-      <workItem from="1747629814044" duration="9463000" />
+      <workItem from="1747629814044" duration="12893000" />
     </task>
     <servers />
   </component>

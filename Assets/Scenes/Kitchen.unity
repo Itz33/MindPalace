@@ -1091,6 +1091,10 @@ PrefabInstance:
       propertyPath: playerPosition
       value: 
       objectReference: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
+    - target: {fileID: 6256758357891544822, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6444905986812799538, guid: 969a88bab3b3a554f9974d6b9e0878b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.37
@@ -1518,10 +1522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f9010b1c5142949b5cc2dd430f1bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedItem: []
-  collectedItemIDs: []
-  inventoryPanel: {fileID: 0}
-  inventoryUIprefab: {fileID: 0}
+  newspapers: []
+  inventoryPanel: {fileID: 236521720}
+  newspaperUIprefab: {fileID: 164797767}
 --- !u!4 &722179018
 Transform:
   m_ObjectHideFlags: 0
@@ -5795,6 +5798,9 @@ MonoBehaviour:
   startPosition: {x: 7.2, y: -3.48, z: 0}
   newplayerPosition: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
   sceneToChange: 4
+  requiresNewspaper: 0
+  messageDisplayTime: 2
+  messageUI: {fileID: 0}
 --- !u!1 &1799008272
 GameObject:
   m_ObjectHideFlags: 0
