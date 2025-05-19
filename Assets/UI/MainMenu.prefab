@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 3559469526231234637}
   - component: {fileID: 9101841468399824675}
   - component: {fileID: 6122918861388604185}
+  - component: {fileID: 2888669214003907411}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -322,6 +323,18 @@ MonoBehaviour:
   onClicked:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2888669214003907411}
+        m_TargetAssemblyTypeName: PositionResetter, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeToScene
@@ -347,6 +360,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToChange: 3
+--- !u!114 &2888669214003907411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989211401535411508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1f65f1356b4884a851f6a9be07befd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionToReset: {fileID: 11400000, guid: da99e8b8657f88c44a4f5c13b0edf9c0, type: 2}
 --- !u!1 &2350038326942028986
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +978,18 @@ MonoBehaviour:
   onClicked:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2888669214003907411}
+        m_TargetAssemblyTypeName: PositionResetter, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeToScene
@@ -976,7 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca5c05bf5ebaed4c85aacddba801265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToChange: 1
+  sceneToChange: 2
 --- !u!1 &5559468458615258261
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,13 +1026,14 @@ GameObject:
   - component: {fileID: 8436430996310182557}
   - component: {fileID: 8638640796227084533}
   - component: {fileID: 3880559121399466737}
+  - component: {fileID: 3253115334843211747}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8436430996310182557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1056,6 +1095,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &3253115334843211747
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559468458615258261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f4254117042ca044a82d0b5da736237, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6965239830369677425
 GameObject:
   m_ObjectHideFlags: 0

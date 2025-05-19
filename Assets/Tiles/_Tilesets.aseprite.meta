@@ -145,7 +145,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: _Tilesets_0
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -8635,6 +8635,26 @@ ScriptedImporter:
       width: 16
       height: 16
     spriteID: 0cf85ada6fa156741bed20570ba6963a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: _Tilesets_papelito
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 420
+      width: 64
+      height: 80
+    spriteID: 326cb6f3b10c158449bebc0e2df724e2
     spriteBone: []
     spriteOutline: []
     vertices: []

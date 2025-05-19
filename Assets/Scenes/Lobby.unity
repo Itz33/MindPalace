@@ -3567,16 +3567,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1688890669}
     m_Modifications:
     - target: {fileID: 3940233959858704203, guid: 40598e3ad8c3524488fb22fa1441a40d, type: 3}
-      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1292732916}
     - target: {fileID: 5559468458615258261, guid: 40598e3ad8c3524488fb22fa1441a40d, type: 3}
       propertyPath: m_Name
       value: MainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5559468458615258261, guid: 40598e3ad8c3524488fb22fa1441a40d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436430996310182557, guid: 40598e3ad8c3524488fb22fa1441a40d, type: 3}
       propertyPath: m_Pivot.x
@@ -3659,7 +3655,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9101841468399824675, guid: 40598e3ad8c3524488fb22fa1441a40d, type: 3}
-      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1292732916}
     m_RemovedComponents: []
