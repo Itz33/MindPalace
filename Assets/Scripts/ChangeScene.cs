@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static SceneEnumAssigner;
 
 public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private Vector3 startPosition;
     [SerializeField] playerPosition newplayerPosition;
-    [SerializeField] private int sceneToChange;
+    [SerializeField] targetScene sceneToChange;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         newplayerPosition.position = startPosition;
-        SceneManager.LoadScene(sceneToChange);
+        SceneManager.LoadScene((int)sceneToChange);
     }
 
 }

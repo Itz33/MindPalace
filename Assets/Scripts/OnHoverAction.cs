@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,7 +11,7 @@ public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] Sprite HoverSprite;
     [SerializeField] public Image ThisImage;
     [SerializeField] GameObject ToolTip;
-
+    [SerializeField] UnityEvent onClicked;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -32,6 +33,6 @@ public class OnHoverAction : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        SceneManager.LoadScene(0);
+        onClicked.Invoke();
     }
 }

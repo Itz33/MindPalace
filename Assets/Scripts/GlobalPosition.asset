@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28f90a50ef5724498c279f3de3695af, type: 3}
   m_Name: GlobalPosition
   m_EditorClassIdentifier: 
-  position: {x: 0, y: -5.46, z: 6998968}
+  position: {x: 0, y: -5.46, z: 0}

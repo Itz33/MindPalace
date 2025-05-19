@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 8577762027258391485}
   - component: {fileID: 3559469526231234637}
   - component: {fileID: 9101841468399824675}
+  - component: {fileID: 6122918861388604185}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -261,8 +262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177.96576, y: -78.81299}
-  m_SizeDelta: {x: 213.13379, y: 153.48248}
+  m_AnchoredPosition: {x: -278.21, y: -120.057}
+  m_SizeDelta: {x: 333.433, y: 240.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8577762027258391485
 CanvasRenderer:
@@ -318,6 +319,34 @@ MonoBehaviour:
   HoverSprite: {fileID: -319556922, guid: 5a55a0f64e52db34aa1061732d60cd0d, type: 3}
   ThisImage: {fileID: 3559469526231234637}
   ToolTip: {fileID: 1921851311966167005}
+  onClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeToScene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6122918861388604185}
+          m_ObjectArgumentAssemblyTypeName: SceneEnumAssigner, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6122918861388604185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989211401535411508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca5c05bf5ebaed4c85aacddba801265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToChange: 3
 --- !u!1 &2350038326942028986
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,8 +608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 414.08032, y: 94}
-  m_SizeDelta: {x: 256.823, y: 84.5636}
+  m_AnchoredPosition: {x: 643, y: 146.924}
+  m_SizeDelta: {x: 397.562, y: 130.905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3507107247683618882
 CanvasRenderer:
@@ -636,6 +665,9 @@ MonoBehaviour:
   HoverSprite: {fileID: -1679313340, guid: 856637196a634704ca30c3dd810d784b, type: 3}
   ThisImage: {fileID: 7172298254138976273}
   ToolTip: {fileID: 7350134320460958665}
+  onClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3953261343148849716
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,8 +795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 692.2, y: 87.436}
-  m_SizeDelta: {x: 111.305, y: 77.2951}
+  m_AnchoredPosition: {x: 1075.933, y: 135.52}
+  m_SizeDelta: {x: 165.571, y: 114.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6439670800596137210
 CanvasRenderer:
@@ -820,6 +852,9 @@ MonoBehaviour:
   HoverSprite: {fileID: -389155001, guid: 6be63b2e7ee4ec848ae0d6efb4a91824, type: 3}
   ThisImage: {fileID: 8943849357307037053}
   ToolTip: {fileID: 3953261343148849716}
+  onClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5550553303558615476
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +867,7 @@ GameObject:
   - component: {fileID: 4396400457025787433}
   - component: {fileID: 5074557811761800452}
   - component: {fileID: 3940233959858704203}
+  - component: {fileID: 136590083924104919}
   m_Layer: 5
   m_Name: Load
   m_TagString: Untagged
@@ -856,8 +892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 595.11304, y: 87.00693}
-  m_SizeDelta: {x: 168.8088, y: 78.1523}
+  m_AnchoredPosition: {x: 925.9, y: 135.52}
+  m_SizeDelta: {x: 260.952, y: 120.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4396400457025787433
 CanvasRenderer:
@@ -913,6 +949,34 @@ MonoBehaviour:
   HoverSprite: {fileID: -2017663553, guid: 169f3e3228c998948a955d771a428961, type: 3}
   ThisImage: {fileID: 5074557811761800452}
   ToolTip: {fileID: 2350038326942028986}
+  onClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeToScene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 136590083924104919}
+          m_ObjectArgumentAssemblyTypeName: SceneEnumAssigner, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &136590083924104919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550553303558615476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca5c05bf5ebaed4c85aacddba801265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToChange: 1
 --- !u!1 &5559468458615258261
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8436430996310182557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -940,7 +1004,7 @@ RectTransform:
   m_GameObject: {fileID: 5559468458615258261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6425, y: 0.6425, z: 0.6425}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1875789510992447597}
