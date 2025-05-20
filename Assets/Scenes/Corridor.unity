@@ -4633,7 +4633,6 @@ GameObject:
   m_Component:
   - component: {fileID: 990127524}
   - component: {fileID: 990127523}
-  - component: {fileID: 990127525}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Tilemap
@@ -4677,51 +4676,6 @@ Transform:
   - {fileID: 739425471}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &990127525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990127522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8957e822e82b044a8f4be297d5b9a5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  comment: "\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726READ
-    ME\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726\nHola!!
-    Soy Jo, \n\nEncontre un Script que hace que podamos a\xF1adir notas a los GameObjects!
-    Y Pens\xE9 en agregarlo para que podamos tener mejor comunicaci\xF3n en partes
-    de juego espec\xEDficas en vez de tenerlo todo en el chat\n\nYa que yo me encargu\xE9
-    de parte de los assets, junto con Chris y Fer, pense que ser\xEDa mas facil dejar
-    una nota para explicar mas o menos como los organic\xE9, tanto para futuras referencias,
-    cambios espec\xEDficos o en caso de que alguien modifique alg\xFAn archivo, sepa
-    como arreglarlo si es que se crashea todo. \n\nEsta nota la hice porque pens\xE9
-    que si una persona se encarga de cierta tarea, ser\xEDa m\xE1s sencillo en cuanto
-    a organizaci\xF3n y uniformidad el que todo se vea de cierta manera. \n\n\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726COMO
-    HICE EL TILEMAP\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726\n\nBueno,
-    el tilemap como tal es el grupo de tiles que ven aqui. Tiene actuamente 6 capas,
-    o Sorting Layers. llamadas Ground, Walk In front, Collision, Player, Walk Behind
-    y Decor. \n\nCada una de ellas, si pueden observarlo, tiene un nombre espec\xEDfico
-    respecto a c\xF3mo el personaje se comporta con \xE9l. Y como pueden ver, algunos
-    objetos est\xE1n divididos entre varias Capas :0\n\nhttps://www.youtube.com/watch?v=UId0mwanBZg&list=PLaaFfzxy_80HtVvBnpK_IjSC8_Y9AOhuP&index=4&pp=iAQB
-    \n\nVi este video para tener una mejor idea de c\xF3mo organizar dichos objetos.
-    \n\n\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726COMO
-    HICE EL TILE PALETTE\u2726\u2022\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\xB7\u2022\u2726\n\nPara
-    hacer el tile palette, use los archivos de ASEPRITE con los que hemos estado
-    trabajando Chris, Fer y Jo, aunque los he modificado para que sean uno solo.
-    \n\nSi entran a los archivos de ASEPRITE, podr\xE1n observar que en el archivo
-    _Tileset se encuentran todos los assets, pero no todos se ven en el TILE PALETTE,
-    esto es porque ese archivo esta visualmente dividido entre:\n\n1. los objetos
-    de juego \n2. los tiles que se necesitan para hacer los RULE TILES. \n\nPero
-    al seleccionar los tiles dentro del TILE PALETTE que parecen pisos e intentan
-    dibujar con ellos, podr\xE1n observar que no tienen que estar poniendo esquinas
-    y cosas as\xED. Hay RULETILES dentro del TILE PALETTE, los cuales se comportan
-    como tiles inteligentes. Pueden saber m\xE1s al respecto aqu\xED: \n\nNO BORREN
-    NADA EN LAS CARPETAS DE TILES. RULETILES O TILEMAP. Si necesitan hacer un cambio
-    en espec\xEDfico sobre cualquiera de estos aspectos, cont\xE1ctenme por el grupo
-    o personalmente al respecto. \n\nhttps://www.youtube.com/watch?v=rC55Q7p90qs"
 --- !u!1 &999285092
 GameObject:
   m_ObjectHideFlags: 0
